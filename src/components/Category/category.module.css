@@ -1,0 +1,48 @@
+.category {
+  /* height: 350px; */
+
+  display: flex;
+  justify-content: space-between; /* Distributes space evenly */
+  margin: 20px; /* Margin around the category container */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.category a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Text color */
+  margin: 0 10px; /* Horizontal spacing between cards */
+  border: 2px solid #ccc; /* Border around cards */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Inner padding */
+  flex: 1; /* Allow items to grow */
+
+  box-sizing: border-box; /* Include padding and border in the width */
+  /* text-align: center; Center the text */
+}
+
+.category img {
+  width: 100%; /* Make image responsive */
+  max-height: 200px; /* Maintain aspect ratio */
+  border-radius: 4px; /* Optional rounded corners */
+  object-fit: contain;
+  padding: 0 5px;
+}
+.category p {
+  font-size: 20px;
+  font-weight: bold;
+  align-items: start;
+
+  color: rgb(0, 132, 200);
+}
+.category_container {
+  position: relative;
+  margin-top: -200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1400px;
+  gap: 20px;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}

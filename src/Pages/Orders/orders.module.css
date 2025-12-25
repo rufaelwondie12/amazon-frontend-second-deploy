@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #efeeee;
+}
+.orders_container {
+  background-color: #fff;
+  padding: 20px;
+}
+.orders_container h2 {
+  border-bottom: 2px solid var(--primary-shade);
+  padding: 20px;
+}
+.orders_container p {
+  padding: 12px;
+}
+.orders_container img {
+  width: 150px !important;
+}
+.orders_container div {
+  height: auto !important;
+}
+hr {
+  margin: 15px 0;
+  border: 1px solid #eee;
+}
+.empty_orders {
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #999;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
